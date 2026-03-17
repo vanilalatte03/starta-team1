@@ -1,0 +1,223 @@
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    background-color: #dbe7ef;
+    color: #2f2f2f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* 전체 페이지 */
+.page {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    border-bottom: 1px solid #aebdc7;
+    background-color: #dbe7ef;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1280px;
+    height: 68px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 로고 */
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #2c2c2c;
+}
+
+/* 메뉴 */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-left: auto;
+    margin-right: 48px;
+}
+
+.nav a {
+    font-size: 0.95rem;
+    color: #383838;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+/* 헤더 우측 아이콘 */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icon-btn {
+    color: #5a6770;
+    font-size: 1.1rem;
+    padding: 4px;
+}
+
+.icon-btn:hover {
+    opacity: 0.75;
+}
+
+/* 메인 영역 */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 28px 20px 24px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1280px;
+}
+
+/* 페이지 제목 */
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3c4f61;
+    margin-bottom: 26px;
+    letter-spacing: -0.4px;
+}
+
+/* 푸터 */
+.footer {
+    width: 100%;
+    padding: 18px 0 16px;
+}
+
+.footer-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    color: #404040;
+    font-size: 0.92rem;
+}
+
+.footer-left {
+    justify-self: start;
+}
+
+.footer-left a {
+    font-size: 1.35rem;
+    color: #4a4a4a;
+}
+
+.footer-center {
+    justify-self: center;
+    font-weight: 500;
+}
+
+.footer-right {
+    justify-self: end;
+    font-size: 0.88rem;
+}
+
+/* 우하단 별 장식 */
+.star-decoration {
+    position: fixed;
+    right: 22px;
+    bottom: 14px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+    pointer-events: none;
+}
+
+/* 반응형 */
+@media (max-width: 1100px) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+
+    .nav {
+        gap: 24px;
+        margin-right: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        height: auto;
+        padding: 16px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .header-icons {
+        margin-left: auto;
+    }
+
+    .page-title {
+        font-size: 1.55rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        justify-self: center;
+    }
+}

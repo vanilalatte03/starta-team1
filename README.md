@@ -14,18 +14,9 @@ Git 브랜치 전략, Pull Request 생성, 코드 리뷰, 병합 과정을 직�
 
 ## 역할 분담
 
-### HTML
-- `feature/header-nav` — 임선규  
-  - 상단 네비게이션, 하단 footer HTML
-- `feature/member-cards-html` — 양지원  
-  - 멤버 카드 HTML
-
-### CSS
-- `feature/layout-style` — 조민재  
-  - 전체 레이아웃 스타일
-- `feature/card-style` — 정욱재  
-  - 멤버 카드 스타일
-
-### JavaScript
-- `feature/card-interaction` — 민병준  
-  - 디테일 버튼 클릭 시 토스트 메시지 출력
+- 임지호: 기본 파일 구성 및 연결, README 작성
+- 임선규: 상단 네비게이션 및 하단 footer HTML
+- 양지원: 멤버 카드 HTML
+- 조민재: 전체 레이아웃 스타일
+- 정욱재: 멤버 카드 스타일
+- 민병준: 카드 디테일 버튼 클릭 시 토스트 메시지 기능 구현

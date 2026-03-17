@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ManyToOne | 멤버 프로필</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="#" class="header__logo-link">@ManyToOne</a>
+        </div>
+
+        <nav class="header__nav" aria-label="메인 메뉴">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">팀소개</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">멤버소개</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">팀규칙</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+            <button type="button" class="header__icon-button" aria-label="검색">
+                🔍
+            </button>
+            <button type="button" class="header__icon-button" aria-label="프로필">
+                👤
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="profile">
+        <div class="profile__inner">
+            <h1 class="profile__title">@ManyToOne | 멤버 프로필</h1>
+            <!-- 팀원 정보 넣기 -->
+            <div class="member-grid">
+
+                <!-- 조민재 -->
+                <div class="member-card">
+
+                    <div class="member-image">
+                        <img src="./images/minjae.png" alt="조민재">
+                    </div>
+
+                    <div class="member-info">
+
+                        <h2 class="member-name">조민재</h2>
+                        <p class="member-role">백엔드 개발자</p>
+
+                        <p class="member-intro">
+                            Java와 Spring을 기반으로 처음부터 시작해 차근차근 꾸준히 성장하며,
+                            맡은 바를 책임감 있게 끝까지 수행하려고 노력하는 백엔드 개발자 지망생입니다.
+                        </p>
+
+                        <div class="member-detail">
+
+                            <h4>관심 기술</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>Spring Boot</li>
+                                <li>Docker</li>
+                            </ul>
+
+                            <h4>협업 시 중요하게 생각하는 점</h4>
+                            <ul>
+                                <li>자신이 맡은 일에 대해서 끝까지 수행하려는 태도</li>
+                                <li>서로 도와주고 도움받으며 같이 성장하는 분위기</li>
+                                <li>더 좋은 방향성이 있다면 주저없이 소통하고 공유하려는 태도</li>
+                            </ul>
+
+                            <h4>온보딩 목표</h4>
+                            <ul>
+                                <li>Git/Github 사용방법 익히기</li>
+                                <li>git 자주쓰는 용어들 익숙해지기</li>
+                                <li>팀 프로젝트에 빠르게 적응하기</li>
+                            </ul>
+
+                        </div>
+
+                        <button class="detail-btn">VIEW DETAIL</button>
+
+                    </div>
+                </div>
+
+
+                <!-- 임선구 -->
+                <div class="member-card">
+
+                    <div class="member-image">
+                        <img src="./images/sungu.png" alt="임선구">
+                    </div>
+
+                    <div class="member-info">
+
+                        <h2 class="member-name">임선구</h2>
+                        <p class="member-role">백엔드 개발자</p>
+
+                        <p class="member-intro">
+                            Spring, Java를 이용한 백엔드 개발자가 되고 싶은 임선구입니다.
+                        </p>
+
+                        <div class="member-detail">
+
+                            <h4>관심 기술</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>AI</li>
+                            </ul>
+
+                            <h4>협업 시 중요하게 생각하는 점</h4>
+                            <ul>
+                                <li>팀원들간의 소통</li>
+                                <li>모르는 문제 이해하고 넘어가기</li>
+                            </ul>
+
+                            <h4>온보딩 목표</h4>
+                            <ul>
+                                <li>git branch 흐름 익히기</li>
+                                <li>협업과정 익히기</li>
+                            </ul>
+
+                        </div>
+
+                        <button class="detail-btn">VIEW DETAIL</button>
+
+                    </div>
+                </div>
+
+
+                <!-- 정욱재 -->
+                <div class="member-card">
+
+                    <div class="member-image">
+                        <img src="./images/wookjae.png" alt="정욱재">
+                    </div>
+
+                    <div class="member-info">
+
+                        <h2 class="member-name">정욱재</h2>
+                        <p class="member-role">백엔드 개발자</p>
+
+                        <p class="member-intro">
+                            Spring, Java를 활용하여 대용량 트래픽 처리를 할 수 있는
+                            백엔드 개발자가 되고 싶은 정욱재입니다.
+                        </p>
+
+                        <div class="member-detail">
+
+                            <h4>관심 기술</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>RDMS</li>
+                                <li>NoSQL</li>
+                            </ul>
+
+                            <h4>협업 시 중요하게 생각하는 점</h4>
+                            <ul>
+                                <li>프로젝트 진행 과정을 기록하기</li>
+                                <li>자신이 맡은 역할은 끝까지 최선을 다하기</li>
+                                <li>서로 어려운 점이 있으면 협력하면서 해결하기</li>
+                            </ul>
+
+                            <h4>온보딩 목표</h4>
+                            <ul>
+                                <li>git branch 흐름 익히기</li>
+                                <li>협업과정 익히기</li>
+                                <li>git 명령어 익숙해지기</li>
+                            </ul>
+
+                        </div>
+
+                        <button class="detail-btn">VIEW DETAIL</button>
+
+                    </div>
+                </div>
+
+
+                <!-- 임지호 -->
+                <div class="member-card">
+
+                    <div class="member-image">
+                        <img src="./images/jiho.jpg" alt="임지호">
+                    </div>
+
+                    <div class="member-info">
+
+                        <h2 class="member-name">임지호</h2>
+                        <p class="member-role">백엔드 개발자</p>
+
+                        <p class="member-intro">
+                            Java와 Spring 기반 백엔드 개발자를 목표로
+                            기본기부터 협업 방식까지 차근차근 쌓아가며 성장하고 있는 개발자 지망생입니다.
+                        </p>
+
+                        <div class="member-detail">
+
+                            <h4>관심 기술</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>AI</li>
+                                <li>Docker</li>
+                            </ul>
+
+                            <h4>협업 시 중요하게 생각하는 점</h4>
+                            <ul>
+                                <li>원활한 소통</li>
+                                <li>맡은 작업을 끝까지 책임감 있게 수행하는 태도</li>
+                                <li>리뷰를 주고받으며 함께 성장하는 분위기</li>
+                            </ul>
+
+                            <h4>온보딩 목표</h4>
+                            <ul>
+                                <li>git branch 흐름 익히기</li>
+                                <li>PR 작성과 리뷰 경험해보기</li>
+                                <li>협업 과정에서 자주 쓰는 Git/GitHub 사용법에 익숙해지기</li>
+                                <li>팀 프로젝트 진행 방식에 빠르게 적응하기</li>
+                            </ul>
+
+                        </div>
+
+                        <button class="detail-btn">VIEW DETAIL</button>
+
+                    </div>
+                </div>
+
+
+                <!-- 민병준 -->
+                <div class="member-card">
+
+                    <div class="member-image">
+                        <img src="./images/byeongjun.png" alt="민병준">
+                    </div>
+
+                    <div class="member-info">
+
+                        <h2 class="member-name">민병준</h2>
+                        <p class="member-role">백엔드 개발자</p>
+
+                        <p class="member-intro">
+                            전부 처음이라 도움은 되지 못하지만 열심히 하겠습니다!
+                        </p>
+
+                        <div class="member-detail">
+
+                            <h4>관심 기술</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>AI</li>
+                            </ul>
+
+                            <h4>협업 시 중요하게 생각하는 점</h4>
+                            <ul>
+                                <li>소통</li>
+                                <li>책임감</li>
+                                <li>진행상황 공유</li>
+                                <li>진행상황 기록</li>
+                            </ul>
+
+                            <h4>온보딩 목표</h4>
+                            <ul>
+                                <li>Git, GitHub 기능 익숙해지기</li>
+                                <li>협업 방식 익숙해지기</li>
+                                <li>Git branch 와 PR 익숙해지기</li>
+                            </ul>
+
+                        </div>
+
+                        <button class="detail-btn">VIEW DETAIL</button>
+
+                    </div>
+                </div>
+
+
+                <!-- 양지원 -->
+                <div class="member-card">
+
+                    <div class="member-image">
+                        <img src="./images/jiwon.png" alt="양지원">
+                    </div>
+
+                    <div class="member-info">
+
+                        <h2 class="member-name">양지원</h2>
+                        <p class="member-role">백엔드 개발자</p>
+
+                        <p class="member-intro">
+                            모든 게 처음이라 아직 익숙하지 않지만 열심히 하겠습니다~!
+                        </p>
+
+                        <div class="member-detail">
+
+                            <h4>관심 기술</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>AI</li>
+                            </ul>
+
+                            <h4>협업 시 중요하게 생각하는 점</h4>
+                            <ul>
+                                <li>기록</li>
+                                <li>일정 공유</li>
+                                <li>리뷰 소통</li>
+                                <li>책임감</li>
+                            </ul>
+
+                            <h4>온보딩 목표</h4>
+                            <ul>
+                                <li>git & github 개념 및 기초 사용법</li>
+                                <li>git branch 흐름 익히기</li>
+                                <li>PR 작성과 리뷰 경험해보기</li>
+                            </ul>
+
+                        </div>
+
+                        <button class="detail-btn">VIEW DETAIL</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__left">
+            <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__github-link"
+            >
+                GitHub
+            </a>
+        </div>
+
+        <div class="footer__center">
+            <p class="footer__text">내일배움캠프</p>
+        </div>
+
+        <div class="footer__right">
+            <p class="footer__text">2026 @ManyToOne</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>

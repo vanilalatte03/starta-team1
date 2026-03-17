@@ -7,21 +7,72 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+
 <header class="header">
-    <div class="header__inner"></div>
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="#" class="header__logo-link">@ManyToOne</a>
+        </div>
+
+        <nav class="header__nav" aria-label="메인 메뉴">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">팀소개</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">멤버소개</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">팀규칙</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+            <button type="button" class="header__icon-button" aria-label="검색">
+                🔍
+            </button>
+            <button type="button" class="header__icon-button" aria-label="프로필">
+                👤
+            </button>
+        </div>
+    </div>
 </header>
 
 <main class="main">
     <section class="profile">
         <div class="profile__inner">
             <h1 class="profile__title">@ManyToOne | 멤버 프로필</h1>
-            <div class="member-grid"></div>
+
+            <div class="member-grid">
+                <!-- 멤버 카드 영역 -->
+                <!-- 카드 담당 팀원이 이 안에 member card HTML을 추가할 예정 -->
+            </div>
         </div>
     </section>
 </main>
 
 <footer class="footer">
-    <div class="footer__inner"></div>
+    <div class="footer__inner">
+        <div class="footer__left">
+            <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__github-link"
+            >
+                GitHub
+            </a>
+        </div>
+
+        <div class="footer__center">
+            <p class="footer__text">내일배움캠프</p>
+        </div>
+
+        <div class="footer__right">
+            <p class="footer__text">2026 @ManyToOne</p>
+        </div>
+    </div>
 </footer>
 
 <script src="./script.js"></script>
